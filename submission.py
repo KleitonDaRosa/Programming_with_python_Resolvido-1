@@ -156,8 +156,7 @@ def increment_sparse_vector(v1: SparseVector, scale: float, v2: SparseVector,) -
     """
     # BEGIN_YOUR_CODE (our solution is 2 lines of code, but don't worry if you deviate from this)
 
-    '''
-    Walter coding
+ 
     
     lista = []
     if(len(v1) != len(v2)):
@@ -168,7 +167,7 @@ def increment_sparse_vector(v1: SparseVector, scale: float, v2: SparseVector,) -
         v1[0] = v1[a] + v2[a] * scale
         lista.append(v1)
     print(lista)
-    '''
+   
 
     #raise Exception("Not implemented yet")
     # END_YOUR_CODE
