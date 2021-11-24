@@ -62,7 +62,6 @@ def euclidean_distance(loc1: Position, loc2: Position) -> float:
 dicionario = {'and': ['the'], 'the': ['cat', 'dog'], 'cat': ['and']}
 sentence_list = []
 sentence_length = 5
-
 def mutate_sentences(split_sentence,key):
     """
     Given a sentence (sequence of words), return a list of all "similar"
@@ -98,18 +97,15 @@ def mutate_sentences(split_sentence,key):
     return
 
 
-##Testando a funcão mutate_sentences
-for key in dicionario.keys():
-    split_sentence = []
-    mutate_sentences(split_sentence, key)
+    ##Testando a funcão mutate_sentences
+    for key in dicionario.keys():
+        split_sentence = []
+        mutate_sentences(split_sentence, key)
 
 
-for elem in sentence_list:
-    sentence = " ".join(elem)
-    print (sentence + "\n")
-
-    
-    
+    for elem in sentence_list:
+        sentence = " ".join(elem)
+        print (sentence + "\n")
     
     # END_YOUR_CODE
 
@@ -183,10 +179,10 @@ def find_nonsingleton_words(text: str) -> Set[str]:
     You might find it useful to use collections.defaultdict(int).
     """
     # BEGIN_YOUR_CODE (our solution is 4 lines of code, but don't worry if you deviate from this)
-    raise Exception("Not implemented yet")
+    return set([word for word in text.split(" ") if text.split(" ").count(word) > 1])
     # END_YOUR_CODE
 
-#increment_sparse_vector([1,2,3],10,[2,2,2]);
 
 
+print(find_nonsingleton_words("ola ola mundo"))
 
