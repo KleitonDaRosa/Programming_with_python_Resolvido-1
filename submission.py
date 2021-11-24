@@ -1,3 +1,6 @@
+#Elementos do grupo
+#Vitoria Anthony, Kleiton da Rosa, Walter Santos
+
 import collections
 import math
 from typing import Any, DefaultDict, List, Set, Tuple
